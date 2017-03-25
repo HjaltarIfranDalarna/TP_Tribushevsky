@@ -1,0 +1,12 @@
+1 -> 1 -> Alexander -> Stadnik
+2 -> 1 -> Anastasia -> Klimovich
+3 -> 0 -> - -> -
+4 -> 1 -> Alexander -> Piykavy
+5 -> 0 -> - -> -
+6 -> 0 -> - -> -
+7 -> 1 -> Arsen -> Cheb
+8 -> 1 -> Yuliya -> Kozel
+9 -> 1 -> Egor -> Piankov
+10 -> 0 -> - -> -
+11 -> 1 -> Danich -> Mur
+12 -> 1 -> Dmitry -> Emelianov
