@@ -133,7 +133,18 @@ void SELECT(sqlite3 *db){
 
 void INSERT(sqlite3 *db){
     sqlite3_stmt *res;
-    char *sql = "INSERT INTO Employees VALUES(?,?,?,?,?,?,?,?,?,?,?,?);";
+    char *sql;
+    printf("Transaction of Autocomit: ");
+    char answer[15];
+    scanf("%s", answer);
+    if(strcmp(answer, "Autocomit")){
+        sql = "INSERT INTO  employees VALUES(?,?,?,?,?,?,?,?,?,?,?,?);";
+    }
+    else{
+        sql = " BEGIN TRANSACTION; \
+                INSERT INTO employees VALUES(?,?,?,?,?,?,?,?,?,?,?,?);\
+                COMMIT;";
+    }
     char *err_msg = 0;
     char fields[11][LINE_SIZE];
     struct tm hiringdate, birthdate;
