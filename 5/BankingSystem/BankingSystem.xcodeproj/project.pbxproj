@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845B98801E8B0934005BCB11 /* work.c in Sources */ = {isa = PBXBuildFile; fileRef = 845B987E1E8B0934005BCB11 /* work.c */; };
+		84B76FE51E86B8590061B1A6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B76FE41E86B8590061B1A6 /* libsqlite3.tbd */; };
+		84B76FEC1E86E47D0061B1A6 /* authentication.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B76FEA1E86E47D0061B1A6 /* authentication.c */; };
+		84B76FEF1E86E4920061B1A6 /* administrator.c in Sources */ = {isa = PBXBuildFile; fileRef = 84B76FED1E86E4920061B1A6 /* administrator.c */; };
 		E764B97A1E8595D40012642B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E764B9791E8595D40012642B /* main.c */; };
+		E764B99A1E86F5140012642B /* o_balance.c in Sources */ = {isa = PBXBuildFile; fileRef = E764B9981E86F5140012642B /* o_balance.c */; };
+		E7BD1D381E891C31004EBE56 /* o_transaction.c in Sources */ = {isa = PBXBuildFile; fileRef = E7BD1D361E891C31004EBE56 /* o_transaction.c */; };
+		E7BD1D3A1E891C55004EBE56 /* o_credit.c in Sources */ = {isa = PBXBuildFile; fileRef = E7BD1D391E891C55004EBE56 /* o_credit.c */; };
+		E7BD1D3C1E891C64004EBE56 /* o_debit.c in Sources */ = {isa = PBXBuildFile; fileRef = E7BD1D3B1E891C64004EBE56 /* o_debit.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,10 +31,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		845B987E1E8B0934005BCB11 /* work.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = work.c; sourceTree = "<group>"; };
+		845B987F1E8B0934005BCB11 /* work.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = work.h; sourceTree = "<group>"; };
+		84B76FE41E86B8590061B1A6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		84B76FEA1E86E47D0061B1A6 /* authentication.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = authentication.c; sourceTree = "<group>"; };
+		84B76FEB1E86E47D0061B1A6 /* authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authentication.h; sourceTree = "<group>"; };
+		84B76FED1E86E4920061B1A6 /* administrator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = administrator.c; sourceTree = "<group>"; };
+		84B76FEE1E86E4920061B1A6 /* administrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = administrator.h; sourceTree = "<group>"; };
 		E764B9761E8595D40012642B /* BankingSystem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BankingSystem; sourceTree = BUILT_PRODUCTS_DIR; };
 		E764B9791E8595D40012642B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		E764B9801E859C570012642B /* user.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = user.h; sourceTree = "<group>"; };
-		E764B9811E859CB70012642B /* client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = client.h; sourceTree = "<group>"; };
+		E764B9981E86F5140012642B /* o_balance.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = o_balance.c; sourceTree = "<group>"; };
+		E764B9991E86F5140012642B /* operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = operator.h; sourceTree = "<group>"; };
+		E7A3D4411E8AA016001FA881 /* system_info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = system_info.h; sourceTree = "<group>"; };
+		E7BD1D361E891C31004EBE56 /* o_transaction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = o_transaction.c; sourceTree = "<group>"; };
+		E7BD1D391E891C55004EBE56 /* o_credit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = o_credit.c; sourceTree = "<group>"; };
+		E7BD1D3B1E891C64004EBE56 /* o_debit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = o_debit.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +53,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B76FE51E86B8590061B1A6 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84B76FE31E86B8590061B1A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84B76FE41E86B8590061B1A6 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E764B96D1E8595D40012642B = {
 			isa = PBXGroup;
 			children = (
 				E764B9781E8595D40012642B /* BankingSystem */,
 				E764B9771E8595D40012642B /* Products */,
+				84B76FE31E86B8590061B1A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,11 +88,53 @@
 		E764B9781E8595D40012642B /* BankingSystem */ = {
 			isa = PBXGroup;
 			children = (
+				E7BD1D3F1E891CB2004EBE56 /* authentification */,
+				E7BD1D3E1E891C8A004EBE56 /* administrator */,
+				E7BD1D3D1E891C72004EBE56 /* operator */,
 				E764B9791E8595D40012642B /* main.c */,
-				E764B9801E859C570012642B /* user.h */,
-				E764B9811E859CB70012642B /* client.h */,
+				E7A3D4411E8AA016001FA881 /* system_info.h */,
 			);
 			path = BankingSystem;
+			sourceTree = "<group>";
+		};
+		E7BD1D3D1E891C72004EBE56 /* operator */ = {
+			isa = PBXGroup;
+			children = (
+				E7BD1D401E891CD1004EBE56 /* activity */,
+				E764B9991E86F5140012642B /* operator.h */,
+			);
+			name = operator;
+			sourceTree = "<group>";
+		};
+		E7BD1D3E1E891C8A004EBE56 /* administrator */ = {
+			isa = PBXGroup;
+			children = (
+				84B76FED1E86E4920061B1A6 /* administrator.c */,
+				84B76FEE1E86E4920061B1A6 /* administrator.h */,
+				845B987E1E8B0934005BCB11 /* work.c */,
+				845B987F1E8B0934005BCB11 /* work.h */,
+			);
+			name = administrator;
+			sourceTree = "<group>";
+		};
+		E7BD1D3F1E891CB2004EBE56 /* authentification */ = {
+			isa = PBXGroup;
+			children = (
+				84B76FEA1E86E47D0061B1A6 /* authentication.c */,
+				84B76FEB1E86E47D0061B1A6 /* authentication.h */,
+			);
+			name = authentification;
+			sourceTree = "<group>";
+		};
+		E7BD1D401E891CD1004EBE56 /* activity */ = {
+			isa = PBXGroup;
+			children = (
+				E764B9981E86F5140012642B /* o_balance.c */,
+				E7BD1D361E891C31004EBE56 /* o_transaction.c */,
+				E7BD1D3B1E891C64004EBE56 /* o_debit.c */,
+				E7BD1D391E891C55004EBE56 /* o_credit.c */,
+			);
+			name = activity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BD1D3C1E891C64004EBE56 /* o_debit.c in Sources */,
+				84B76FEF1E86E4920061B1A6 /* administrator.c in Sources */,
 				E764B97A1E8595D40012642B /* main.c in Sources */,
+				845B98801E8B0934005BCB11 /* work.c in Sources */,
+				84B76FEC1E86E47D0061B1A6 /* authentication.c in Sources */,
+				E7BD1D381E891C31004EBE56 /* o_transaction.c in Sources */,
+				E7BD1D3A1E891C55004EBE56 /* o_credit.c in Sources */,
+				E764B99A1E86F5140012642B /* o_balance.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +328,7 @@
 				E764B97F1E8595D40012642B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
